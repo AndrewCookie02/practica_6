@@ -26,10 +26,30 @@
      }
      
     .btnVer{
-        @include margin (0px, 0px, 5%, 0px);
+        @include margin (0px, 0px, 5%, 10%);
         display: flex;
-        justify-content: center
+        justify-content: center;
+        a:hover{
+            color: $light;
+        }
     }
-    
- 
+    #tituloHor{
+        text-align: center;
+    }
+    #Horario{
+        display: grid;
+        grid-template-areas: "horario book";
+        gap: 5%;
+        width: 80%;
+        @include margin (15%, 0px, 0px, 10%);
+        grid-template-rows: 80% 20%;
+        table{
+            grid-area: horario;
+        }
+        div{
+            grid-area: book;
+            width: 100%;
+        }
+    }
+
  }

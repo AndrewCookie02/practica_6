@@ -50,19 +50,22 @@ BtnMuseo.onclick=()=>{
            }*/
 
 
-            contenido = contenido + "<div class='card' style='width: 18rem;'" +
-                                    "<h2 class='card-title'>" + lista[i].getElementsByTagName('nombre')[0].textContent + "</h2>" +
+            contenido = contenido + "<div class='card' style='width: 40rem;'" +
+                                    "<h4 class='card-title '> </h4>" +
+                                    "<h4 class='card-title texto-txt1'>" + lista[i].getElementsByTagName('nombre')[0].textContent +"</h4>" +
                                     "<img class='card-img-top' src='../public/img/" + lista[i].getElementsByTagName('foto')[0].textContent + "' alt=''>" +
                                 " <div class='card-body'>" +
-                                "<p>" + lista[i].getElementsByTagName('lugar')[0].getAttribute('ciudad') + lista[i].getElementsByTagName('lugar')[0].getAttribute('pais') + "</p>" +
-                                "<p>"+ lista[i].getElementsByTagName('fundacion')[0].textContent + "</p>" +
-                                "<p>"+lista[i].getElementsByTagName('descripcion')[0].textContent+"</p>" +
-                                "<p>" + 
+                                "<p class='texto-txt2'>" + lista[i].getElementsByTagName('lugar')[0].getAttribute('ciudad') + lista[i].getElementsByTagName('lugar')[0].getAttribute('pais') + "</p>" +
+                                "<p class='texto-txtp'>"+ lista[i].getElementsByTagName('fundacion')[0].textContent + "</p>" +
+                                "<p class='texto-txtp'>"+lista[i].getElementsByTagName('descripcion')[0].textContent+"</p>" +
+                                "<p class='texto-txtp'>" + 
                                 //categorias.textContent
                                 "</p>" +
-                                "<a href=" + lista[i].getElementsByTagName('link')[0].textContent + " 'class='btn btn-primary'>Visita el sitio</a>" +
+                                "<a href='"+ lista[i].getElementsByTagName('link')[0].textContent +"'>Visita el sitio</a>"+
                                 "</div>" +
                                 "</div>"
+
+                                
         //console.log(contenido);
         card.innerHTML = contenido;
 

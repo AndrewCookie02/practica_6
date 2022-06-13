@@ -1,8 +1,3 @@
-///***fuentes*///
-/*$titulos: 40px ;
-$subtitulo: 25px;
-$parrafo:18px;
-*/
 
 /******************************************/
 $font1: 'Roboto Condensed', sans-serif ;
@@ -41,17 +36,4 @@ $textos: ('txt1': 40px $font1 map-get($colors,'txt1'),
     }
 }
 
-
-
-/***
-.txt-1{
-            font-size: $titulos;
-           }
-           .txt-2{
-               font-size: $subtitulo;
-           }
-           .txt-p{
-               font-size: $parrafo;
-           }
-***/
 

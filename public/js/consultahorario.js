@@ -29,29 +29,27 @@ xhr.onreadystatechange = function() {
 
         /******************/
         //recorriendo la lista con el ciclo for
-    for (let i=0; i<lista.length; i++){
-        //Variables fila y celdas para crear los elementos HTML
-        let schedule  = document.createElement('tr');    
-        let dia   = document.createElement('td');
-        let hora = document.createElement('td');      
-   
-        let listaWeek = lista[i].getElementsByTagName('week')[0].children;
+        for (let i=0; i<lista.length; i++){
 
-        dia.textContent = '';
+            let schedule  = document.createElement('tr');    
+            let dia   = document.createElement('td');
+            let hora = document.createElement('td');      
+       
+            let listaDias = lista[i].getElementsByTagName('week')[0].children;
+            console.log(listaDias.length);
 
-        for(let j=0; j<listaWeek.length; i++){
-            dia.textContent = dia.textContent + ' ' + listaWeek[j].textContent;
-        }
+            dia.textContent = '';
 
-        /*
-        peli.appendChild(nombre);
-        peli.appendChild(director);
-        peli.appendChild(repartoPeli);
-
-        tabla.appendChild(peli);
-
-        */
-    }
+            for (let j=0; j<listaDias; j++){
+                console.log('lista' + listaDias[j].textContent);
+                dia.textContent = dia.textContent +''+ listaDias[j].textContent;
+            }
+            console.log('lista' + dia.textContent);
     
+            schedule.appendChild(dia);
+            schedule.appendChild(hora);
     
+            tabla.appendChild(schedule);
+           
+        }  
 }
