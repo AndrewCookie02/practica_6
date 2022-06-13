@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Nodo o etiqueta raiz -->
+
+<schedule>
+    <week>
+        <dia>Lunes</dia>
+        <dia>Miércoles</dia>
+        <dia>Sábado</dia>
+    </week>
+        
+    <hour>
+        <hora>7:00 a.m - 8:00 p.m</hora>
+        <hora>7:00 a.m - 8:00 p.m</hora>
+        <hora>9:00 a.m - 3:00 p.m</hora>
+    </hour>
+        
+</schedule>
+    

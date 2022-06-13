@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Nodo o etiqueta raiz -->
+<listamuseos>
+    <museo>
+        <nombre>Museo de la Acrópolis</nombre>
+        <link>https://artsandculture.google.com/search?q=Athens</link>
+        <lugar ciudad="Atenas" pais="Grecia"/>  
+        <foto>Museo de la Acrópolis.jpg</foto>
+        <coleccion>
+            <categoria>Galería de las laderas de la Acrópolis</categoria>
+            <categoria>Galería arcaica</categoria>
+            <categoria>Galería del Partenón</categoria>
+            <categoria>Propileos, Atenea Nike, Erecteion</categoria>
+            <categoria>Del siglo V a. C. al siglo V d. C.</categoria>
+        </coleccion>
+        <fundacion>20 de Junio del 2009</fundacion>
+        <descripcion>Es uno de los principales museos arqueológicos de Atenas y es también considerado como uno de los más importantes del mundo. El antiguo museo se encontraba en el interior de la acrópolis pero debido a sus pequeñas dimensiones se propuso la construcción de un nuevo museo de mayor tamaño fuera de la acrópolis.</descripcion> 
+    </museo>
+
+    <museo>
+        <nombre>Museo Thyssen-Bornemisza</nombre>
+        <link>https://www.museothyssen.org/</link>
+        <lugar ciudad="Madrid" pais="España"/>       
+        <foto>Museo Thyssen-Bornemisza.webp</foto>
+        <coleccion>
+            <categoria>Artistas</categoria>
+            <categoria>Obras de arte</categoria>
+            <categoria>Colección permanente</categoria>
+            <categoria>Colección Carmen Thyssen</categoria>
+        </coleccion>
+        <fundacion>1992</fundacion>
+        <descripcion>El Thyssen-Bornemisza llena los vacíos históricos de las colecciones de sus homólogos: en el caso del Prado incluye primitivos italianos y obras de las escuelas inglesa, holandesa y alemana, mientras que en el caso del Reina Sofía se trata de impresionistas, expresionistas y pinturas europeas y americanas del siglo XX.</descripcion> 
+    </museo>
+
+    <museo>
+        <nombre>Museo del Hermitage</nombre>
+        <link>https://hermitagemuseum.org/wps/portal/hermitage/panorama?lng=es</link>
+        <lugar ciudad="San Petesburgo" pais="Rusia"/>       
+        <foto>Museo del Hermitage.jpg</foto>
+        <coleccion>
+            <categoria>Piezas arqueológicas</categoria>
+            <categoria>Colección de cuadros</categoria>
+            <categoria>Armaduras</categoria>
+            <categoria>Esculturas</categoria>
+        </coleccion>
+        <fundacion>1764</fundacion>
+        <descripcion>Una de las mayores pinacotecas y museos de antigüedades del mundo. Su colección, formada por más de tres millones de piezas, abarca desde antigüedades romanas y griegas, a cuadros y esculturas de la Europea Occidental, arte oriental, piezas arqueológicas, arte ruso, joyas o armas. Su pinacoteca está considerada una de las más completas del mundo</descripcion> 
+    </museo>
+
+    <museo>
+        <nombre>British Museum</nombre>
+        <link>https://artsandculture.google.com/partner/the-british-museum</link>
+        <lugar ciudad="Londres" pais="Inglaterra"/>       
+        <foto>British Museum.jpg</foto>
+        <coleccion>
+            <categoria>Americas</categoria>
+            <categoria>Animals</categoria>
+            <categoria>China</categoria>
+            <categoria>Death and memory</categoria>
+            <categoria>Desire, love and identity</categoria>
+            <categoria>Africa</categoria>
+        </coleccion>
+        <fundacion>1753</fundacion>
+        <descripcion>Uno de los museos más importantes y visitados del mundo. Sus colecciones abarcan campos diversos del saber humano, como la historia, la arqueología, la etnografía y el arte.</descripcion> 
+    </museo>
+  
+    <museo>
+        <nombre>Galería de los Uffizi</nombre>
+        <link>https://www.virtualuffizi.com/es/visita-virtual.html</link>
+        <lugar ciudad="Florencia" pais="Italia"/>       
+        <foto>Galería de los Uffizi.jpg</foto>
+        <coleccion>
+            <categoria>Cuadros</categoria>
+            <categoria>Esculturas</categoria>
+            <categoria>Miniaturas</categoria>
+            <categoria>Tapices o piezas de porcelana</categoria>
+        </coleccion>
+        <fundacion>	1581</fundacion>
+        <descripcion>Un palacio y museo que contiene una de las más antiguas y famosas colecciones de arte del mundo. Se la considera como una de las atracciones turísticas más vistas de Florencia y en 2015 recibió casi dos millones de visitas, siendo por ello la pinacoteca más frecuentada de Italia.</descripcion> 
+    </museo>
+
+</listamuseos>
