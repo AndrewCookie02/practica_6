@@ -19,10 +19,10 @@ xhr.onreadystatechange = function() {
         
        console.log(respXML);
 
-        let lista = respXML.getElementsByTagName('schedule');
+        let lista = respXML.getElementsByTagName('horario');
 
         //referencia a la tabla
-        let tabla = document.querySelector('#Horario tbody');
+        let tabla = document.querySelector('table tbody');
 
         console.log(tabla);
         console.log(lista);
@@ -35,21 +35,16 @@ xhr.onreadystatechange = function() {
             let dia   = document.createElement('td');
             let hora = document.createElement('td');      
        
-            let listaDias = lista[i].getElementsByTagName('week')[0].children;
-            console.log(listaDias.length);
+            //console.log(lista[i].getElementsByTagName('dia')[0].textContent);
+            
+            dia.textContent = lista[i].getElementsByTagName('dia')[0].textContent; 
 
-            dia.textContent = '';
+            hora.textContent = lista[i].getElementsByTagName('hora')[0].textContent; 
 
-            for (let j=0; j<listaDias; j++){
-                console.log('lista' + listaDias[j].textContent);
-                dia.textContent = dia.textContent +''+ listaDias[j].textContent;
-            }
-            console.log('lista' + dia.textContent);
-    
             schedule.appendChild(dia);
             schedule.appendChild(hora);
-    
             tabla.appendChild(schedule);
+            
            
         }  
 }

@@ -2,17 +2,20 @@
 <!--Nodo o etiqueta raiz -->
 
 <schedule>
-    <week>
+    <horario>
         <dia>Lunes</dia>
+        <hora>7:00 a.m - 8:00 p.m</hora>
+    </horario>
+
+    <horario>
         <dia>Miércoles</dia>
+        <hora>7:00 a.m - 8:00 p.m</hora>
+    </horario>
+
+    <horario>
         <dia>Sábado</dia>
-    </week>
-        
-    <hour>
-        <hora>7:00 a.m - 8:00 p.m</hora>
-        <hora>7:00 a.m - 8:00 p.m</hora>
-        <hora>9:00 a.m - 3:00 p.m</hora>
-    </hour>
-        
+        <hora>9:00 a.m - 3:00 p.m</hora>   
+    </horario>
+
 </schedule>
     
