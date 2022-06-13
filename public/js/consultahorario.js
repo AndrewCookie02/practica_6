@@ -8,7 +8,7 @@ xhr.onreadystatechange = function() {
 }; 
 
     //la accion a realizar sobre el elemento
-    xhr.open("GET", "../data/consultahorario.xml", true); //true, la peticion es asincrona, false es sincrona
+    xhr.open("GET", "../data/consultahorario.xml", true); //true, la peticion es asincrona
     xhr.send(); //dibujar la data en el index.HTML principal
 
 

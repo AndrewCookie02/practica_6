@@ -40,19 +40,6 @@ BtnMuseo.onclick=()=>{
         //recorriendo la lista
 
         for (let i=0; i<lista.length; i++){
-       /*let coleccion = document.createElement ('ul') ;
-        let categorias = document.createElement('li');  
-
-        let listacoleccion = lista[i].getElementsByTagName('coleccion')[0].children;
-            console.log(listacoleccion);
-            categorias.textContent = '';
-
-            for (let j=0; j<listacoleccion.length; j++){          
-                console.log(listacoleccion[j].textContent);
-                categorias.textContent = categorias.textContent + ' ' + listacoleccion[j];
-           }*/
-
-
             contenido = contenido + "<div class='card'" +
                                     "<h4 class='card-title '> </h4>" +
                                     "<h4 class='card-title texto-txt1'>" + lista[i].getElementsByTagName('nombre')[0].textContent +"</h4>" +
@@ -60,20 +47,27 @@ BtnMuseo.onclick=()=>{
                                 " <div class='card-body'>" +
                                 "<p class='texto-txt2'>" + lista[i].getElementsByTagName('lugar')[0].getAttribute('ciudad') + lista[i].getElementsByTagName('lugar')[0].getAttribute('pais') + "</p>" +
                                 "<p class='texto-txtp'>"+ lista[i].getElementsByTagName('fundacion')[0].textContent + "</p>" +
-                                "<p class='texto-txtp'>"+lista[i].getElementsByTagName('descripcion')[0].textContent+"</p>" +
-                                "<p class='texto-txtp'>" + 
-                                //categorias.textContent
-                                "</p>" +
-                                "<a href='"+ lista[i].getElementsByTagName('link')[0].textContent +"'>Visita el sitio</a>"+
-                                "</div>" +
-                                "</div>"
+                                "<p class='texto-txtp'>"+lista[i].getElementsByTagName('descripcion')[0].textContent+"</p>";
+
+                contenido = contenido + "<ul>" ;
+                        let subgrupo = lista[i].getElementsByTagName('coleccion')[0].children;
+                        //console.log(subgrupo);
+                        for (let j=0; j<subgrupo.length; j++){
+                            contenido = contenido + "<li class='texto-txtp'>" + subgrupo[j].textContent + "</li>"
+                        }
+                contenido = contenido + "</ul>" ;
+
+                contenido = contenido + "<a href='"+ lista[i].getElementsByTagName('link')[0].textContent+"'>Visita el sitio</a>"+
+                "</div>" +
+                "</div>" 
+                                
 
                                 
         //console.log(contenido);
         card.innerHTML = contenido;
 
         //coleccion.appendChild(categorias);
-        //card.appendChild(coleccion);
+        
         }
 
 }
