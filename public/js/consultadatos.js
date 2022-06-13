@@ -1,6 +1,9 @@
+let animacard = document.getElementById('lista');
+
 let BtnMuseo = document.getElementById('BtnVer');
 
 BtnMuseo.onclick=()=>{
+    animacard.style.animation = 'aparece 1500ms ease-in-out 250ms';
     let xhr = new XMLHttpRequest(); 
     //variable xhr que es la instancia de la libreria XMLHttpRequest 
     xhr.onreadystatechange = function() { 
@@ -50,7 +53,7 @@ BtnMuseo.onclick=()=>{
            }*/
 
 
-            contenido = contenido + "<div class='card' style='width: 40rem;'" +
+            contenido = contenido + "<div class='card'" +
                                     "<h4 class='card-title '> </h4>" +
                                     "<h4 class='card-title texto-txt1'>" + lista[i].getElementsByTagName('nombre')[0].textContent +"</h4>" +
                                     "<img class='card-img-top' src='../public/img/" + lista[i].getElementsByTagName('foto')[0].textContent + "' alt=''>" +
